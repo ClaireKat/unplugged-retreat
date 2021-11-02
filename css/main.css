@@ -86,7 +86,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*-----------------Base Header - Footer Styles ------------------------------*/
+.content-wrapper{
+  width: 90%;
+  margin: 50px 0;
+}
+   /*-----------------Base Header - Footer Styles ------------------------------*/
 header,
 footer {
   display: flex;
@@ -94,21 +98,45 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+header{
+  padding: 15px 0;
+}
 header .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;/* i think this should be aligned on y axis b/c its at the top of the container*/
+  align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
-.header nav{
+.header-divider{
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 18px 0;
+}
+header nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
-.header nav ul{
+header nav ul{
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+footer {
+  flex-direction: column;
+}
+footer p{
+  margin: 0;
+}
+footer .content-wrapper{
+  width: 55%;
+  margin: 50px 0;
+}
+footer .contact{
+  margin-bottom: 50px;
 }
 footer .social-icons{
   display: flex;
@@ -119,6 +147,10 @@ footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 /*------------------------index.html homepage-----------------*/
@@ -137,8 +169,14 @@ footer .social-icons p{
 .features{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
+}
+.features h2{
+  margin-bottom: 60px;
+}
+.features article{
+  width: 62%;
+  margin: 30px 0;
 }
 .features-item-description{
   display: flex;
@@ -146,10 +184,21 @@ footer .social-icons p{
   align-items: center;
   flex-flow: row wrap;
 }
+.features p{
+  margin: 0;
+}
 .reviews{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  /*width: 90%;*/
+}
+.reviews h3{
+  margin-bottom: 40px;
+}
+.reviews h4{
+  width: 55%;
+  margin: 20px 0;
 }
 
 
@@ -167,6 +216,9 @@ footer .social-icons p{
   align-items: center;
   flex-flow: row wrap;
 }
+.contact-content p{
+  margin: 0;
+}
 /*----------------------------------FAQ--------------------------------*/
 
 .faq{
@@ -175,11 +227,18 @@ footer .social-icons p{
   align-items: center;
   flex-flow: row wrap;
 }
-.faq .faq-content{
+.faq .content-wrapper{
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.faq h1{
+  margin-bottom: 40px;
+}
+.faq-content{
+  margin-bottom: 50px;
 }
 
 
